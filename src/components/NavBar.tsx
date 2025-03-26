@@ -32,7 +32,7 @@ const NavBar = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-terracota hover:text-bege transition-colors duration-200"
+                  className="text-terracota hover:border-b-2 hover:border-b-white"
                 >
                   {item.name}
                 </a>
