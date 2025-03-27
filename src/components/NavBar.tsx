@@ -7,11 +7,10 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#" },
+    { name: "Início", href: "#" },
     { name: "Sobre", href: "#about" },
-    { name: "Artesãos", href: "#artisans" },
+    { name: "Produtos", href: "#products" },
     { name: "Projetos", href: "#projects" },
-    { name: "Eventos", href: "#events" },
     { name: "Contato", href: "#contact" },
   ];
 
