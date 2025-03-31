@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-3">
         <Image
           src="/hero.webp"
           alt="Imagem de fundo"

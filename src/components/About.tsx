@@ -21,8 +21,24 @@ const sections = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-neutral-100">
+    <section id="about" className="py-20 bg-white relative">
       <div className="container mx-auto px-4">
+        <div className="absolute top-0 right-0 z-0">
+          <Image
+            src="/bordado.jpg"
+            alt="Imagem de bordado"
+            width={300}
+            height={300}
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 z-0">
+          <Image
+            src="/costura.jpg"
+            alt="Imagem de costura"
+            width={300}
+            height={300}
+          />
+        </div>
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-teste text-3xl md:text-4xl font-bold mb-4 uppercase">
             Sobre a APROATI
@@ -33,7 +49,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center h-120">
+          <div className="flex justify-center h-120 z-1">
             <video
               width="320"
               height="240"
@@ -53,7 +69,7 @@ const About = () => {
             </video>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 z-3">
             {sections.map((section, index) => (
               <AboutItems key={index} {...section} />
             ))}
