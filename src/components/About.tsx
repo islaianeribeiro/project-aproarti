@@ -1,6 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import AboutItems from "./AboutItems";
+import Details from "./Details";
 
 const sections = [
   {
@@ -23,22 +23,8 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-white relative">
       <div className="container mx-auto px-4">
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/bordado.jpg"
-            alt="Imagem de bordado"
-            width={300}
-            height={300}
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 z-0">
-          <Image
-            src="/costura.jpg"
-            alt="Imagem de costura"
-            width={300}
-            height={300}
-          />
-        </div>
+        <Details />
+
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-teste text-3xl md:text-4xl font-bold mb-4 uppercase">
             Sobre a APROATI

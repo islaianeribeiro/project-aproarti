@@ -12,3 +12,19 @@
   --color-neutral-0: #fff;
   --color-neutral-1: #1d1d1d;
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  animation: scroll 18s linear infinite;
+}
