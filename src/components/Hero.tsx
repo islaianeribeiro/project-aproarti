@@ -14,17 +14,17 @@ const Hero = () => {
         <div className="absolute inset-0 bg-bege opacity-30" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-neutral-1 mb-6">
+      <div className="container p-6 relative z-10 text-center bg-white mx-40 rounded-2xl opacity-90">
+        <h1 className="text-4xl md:text-6xl font-bold text-teste mb-6">
           Valorizando o Artesanato Local
         </h1>
-        <p className="text-xl md:text-2xl text-neutral-1 mb-8 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-azul mb-8 max-w-3xl mx-auto">
           Fortalecendo a cultura e o artesanato de Icó através da união de
           artesãos, gestores culturais e artistas locais.
         </p>
         <a
           href="#about"
-          className="text-neutral-1 inline-block bg-teste text-navy-900 px-8 py-3 rounded-full font-semibold hover:bg-green-200 transition-colors duration-200"
+          className="text-neutral-0 inline-block bg-azul px-8 py-3 rounded-full font-semibold hover:bg-blue-950 transition-colors duration-200"
         >
           Conheça Nossa História
         </a>
