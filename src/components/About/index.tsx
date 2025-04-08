@@ -1,6 +1,6 @@
 import React from "react";
 import AboutItems from "./AboutItems";
-import Details from "./Details";
+import Details from "../ui/Details";
 
 const sections = [
   {
@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <Details />
 
-        <div className="max-w-3xl mx-auto text-center mb-10">
+        <div className="max-w-3xl mx-auto text-center mb-10 z-10 relative">
           <h2 className="text-teste text-3xl md:text-4xl font-bold mb-4 uppercase">
             Sobre a APROATI
           </h2>
@@ -35,7 +35,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center h-120 z-1">
+          <div className="flex justify-center h-120 z-10">
             <video
               width="320"
               height="240"
@@ -55,7 +55,7 @@ const About = () => {
             </video>
           </div>
 
-          <div className="space-y-6 z-3">
+          <div className="space-y-6 z-5">
             {sections.map((section, index) => (
               <AboutItems key={index} {...section} />
             ))}

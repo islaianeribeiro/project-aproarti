@@ -1,19 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import NavItem from "./NavItem";
 import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import Button from "../ui/Button";
+
+const navItems = [
+  { name: "Início", href: "#" },
+  { name: "Sobre", href: "#about" },
+  { name: "Produtos", href: "#products" },
+  { name: "Projetos", href: "#projects" },
+  { name: "Contato", href: "#contact" },
+];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { name: "Início", href: "#" },
-    { name: "Sobre", href: "#about" },
-    { name: "Produtos", href: "#products" },
-    { name: "Projetos", href: "#projects" },
-    { name: "Contato", href: "#contact" },
-  ];
-
   return (
     <nav className="bg-marfim shadow-md fixed w-full z-50 px-10">
       <div className="container mx-auto px-4">
@@ -27,42 +28,34 @@ const NavBar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="text-terracota hover:border-b-2 hover:border-b-white"
-                >
-                  {item.name}
-                </a>
+              {navItems.map((item) => (
+                <NavItem key={item.name} name={item.name} href={item.href} />
               ))}
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button
+            <Button
+              icon={isOpen ? <X size={24} /> : <Menu size={24} />}
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-navy-900"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+              aria-label={isOpen ? "Fechar" : "Abrir"}
+            />
           </div>
         </div>
-
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
             <div className="text-center px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <a
+                <NavItem
                   key={item.name}
+                  name={item.name}
                   href={item.href}
                   className="block px-3 py-2 text-gray-700 hover:text-navy-900 hover:bg-gray-50 rounded-md"
                   onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
+                />
               ))}
             </div>
           </div>

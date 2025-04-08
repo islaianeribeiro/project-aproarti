@@ -1,5 +1,5 @@
 import Product from "./Product";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../ui/SocialMedia";
 
 const Products = () => {
   return (
@@ -19,8 +19,8 @@ const Products = () => {
           <Product />
         </div>
 
-        <div className="flex flex-col justify-between items-center">
-          <h3 className="text-2xl font-semibold text-terracota my-3">
+        <div className="flex flex-col justify-between items-center text-center">
+          <h3 className="md:text-2xl text-xl font-semibold text-terracota mt-3">
             Esses são só alguns dos nossos produtos!
           </h3>
           <p className="text-azul text-lg">

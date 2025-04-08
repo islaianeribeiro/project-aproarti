@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./ui/Button";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-bege opacity-30" />
       </div>
 
-      <div className="container p-6 relative z-10 text-center bg-white mx-40 rounded-2xl opacity-90">
+      <div className="container p-6 relative z-10 text-center bg-white md:mx-40 rounded-2xl opacity-90">
         <h1 className="text-4xl md:text-6xl font-bold text-teste mb-6">
           Valorizando o Artesanato Local
         </h1>
@@ -22,12 +23,11 @@ const Hero = () => {
           Fortalecendo a cultura e o artesanato de Icó através da união de
           artesãos, gestores culturais e artistas locais.
         </p>
-        <a
+        <Button
           href="#about"
           className="text-neutral-0 inline-block bg-azul px-8 py-3 rounded-full font-semibold hover:bg-blue-950 transition-colors duration-200"
-        >
-          Conheça Nossa História
-        </a>
+          text="Conheça Nossa História"
+        />
       </div>
     </section>
   );

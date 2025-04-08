@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             </h3>
             <p>
               Associação de Artesãos, Gestores Culturais e Artistas de Icó -
-              Ceará. Seu objetivo é estimular a produção artesanal local e
+              Ceará. Nosso objetivo é estimular a produção artesanal local e
               oferecer maior estrutura aos artesãos.
             </p>
           </div>
@@ -37,18 +37,16 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="w-auto md:w-125">
+          <div className="w-auto md:w-40">
             <h3 className="text-xl font-semibold mb-4 text-terracota">
               Redes Sociais
             </h3>
             <div className="flex gap-4">
               <a href="#" className="hover:text-blue-400 transition-colors">
-                Facebook
-                {/* <Facebook size={24} /> */}
+                <Facebook size={24} />
               </a>
               <a href="#" className="hover:text-pink-400 transition-colors">
-                Instagram
-                {/* <Instagram size={24} /> */}
+                <Instagram size={24} />
               </a>
             </div>
           </div>
