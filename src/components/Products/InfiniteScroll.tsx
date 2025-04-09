@@ -22,7 +22,7 @@ const InfiniteScroll = ({
         <h3 className="text-xl font-semibold text-terracota text-center mb-2">
           {title}
         </h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 text-sm text-justify">{description}</p>
       </div>
     </div>
   );

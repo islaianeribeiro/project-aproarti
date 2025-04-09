@@ -6,16 +6,22 @@ const sections = [
   {
     title: "Nossa História",
     content:
-      "A APROATI nasceu do desejo de fortalecer e preservar o rico patrimônio artesanal de Icó. Ao longo dos anos, temos trabalhado incansavelmente para valorizar nossos artesãos e suas técnicas tradicionais.",
+      "A APROATI nasceu do desejo de fortalecer e preservar o rico patrimônio artesanal de Icó. Ao longo dos anos, temos trabalhado incansavelmente para valorizar e estimular a produção artesanal local e oferecer maior estrutura aos artesãos, por meio de formações e difusão das manifestações culturais e artesanais da cidade. A organização estimula a capacidade produtiva de cerca de 60 bordadeiras e a venda dos produtos artesanais de alta qualidade nas regiões urbanas e rurais.",
   },
   {
     title: "Comunidades Atendidas",
-    list: ["Cascudo", "Três Budegas", "Varzinha", "Assentamento Bom Lugar"],
+    list: [
+      "Cascudo",
+      "Três Budegas",
+      "Varzinha",
+      "Assentamento Bom Lugar",
+      "Icó",
+    ],
   },
   {
     title: "Nossa Missão",
     content:
-      "Promover o desenvolvimento socioeconômico através do artesanato, preservando nossa cultura e gerando oportunidades para artesãos locais.",
+      "Promover o desenvolvimento socioeconômico através do artesanato, preservando nossa cultura e gerando oportunidades para artesãos locais. Também entre diversas atividades, oferecemos cursos de Bordado Rococó. Uma técnica tradicional que valoriza o artesanato local e desenvolve habilidades criativas e manuais.",
   },
 ];
 

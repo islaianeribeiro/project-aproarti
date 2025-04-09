@@ -7,6 +7,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    select: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -32,7 +33,8 @@ const Contact = () => {
             Entre em Contato
           </h2>
           <p className="text-gray-600">
-            Estamos aqui para responder suas dúvidas e ouvir suas sugestões
+            Tem interesse em colaborar com a associação? Seja você artesão,
+            apoiador ou patrocinador, será um prazer conversar com você.
           </p>
         </div>
 
@@ -59,61 +61,73 @@ const Contact = () => {
             </div>
           </div>
 
-          <div>
-            <form
-              onSubmit={handleSubmit}
-              className="bg-white rounded-lg shadow-lg p-8"
-            >
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-gray-700 mb-2">
-                  Nome
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-gray-700 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-700 mb-2">
-                  Mensagem
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-navy-900 text-white py-3 rounded-lg hover:bg-navy-800 transition-colors duration-200"
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white rounded-lg shadow-lg p-8"
+          >
+            <div className="mb-6">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
+                required
+              />
+            </div>
+            <div className="mb-6">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
+                required
+              />
+            </div>
+            <div className="mb-6">
+              <select
+                id="select"
+                name="select"
+                defaultValue=""
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
               >
-                Enviar Mensagem
-              </button>
-            </form>
-          </div>
+                <option value="" disabled className="text-gray-400">
+                  Selecione seu assunto
+                </option>
+                <option value="colaborar">Quero Colaborar</option>
+                <option value="artesao">Sou Artesão</option>
+                <option value="patrocinio">Patrocínio</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div className="mb-6">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Mensagem"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-900"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-navy-900 text-black py-3 rounded-lg hover:bg-navy-800 transition-colors duration-200"
+            >
+              Enviar Mensagem
+            </button>
+          </form>
+          <p className="text-center text-gray-500 mt-8">
+            Estamos sempre abertos a novas ideias, parcerias e trocas culturais.
+            Sua mensagem é muito bem-vinda!
+          </p>
         </div>
       </div>
     </section>

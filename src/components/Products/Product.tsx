@@ -40,7 +40,7 @@ const Product = () => {
   return (
     <div
       ref={scrollRef}
-      className="flex whitespace-nowrap transition-transform duration-200 ease-linear gap-5"
+      className="flex transition-transform duration-200 ease-linear gap-5"
       style={{ transform: `translateX(${scrollPosition}px)` }}
     >
       {products.concat(products).map((product, index) => (
