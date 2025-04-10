@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
 }) => {
   const content = (
-    <span className="flex items-center gap-2">
+    <span className="flex items-center justify-center gap-2">
       {icon && <span>{icon}</span>}
       {text}
     </span>
