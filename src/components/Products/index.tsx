@@ -27,7 +27,10 @@ const Products = () => {
             Fale com a gente e saiba mais pelas redes sociais.
           </p>
 
-          <SocialMedia />
+          <SocialMedia
+            className="text-white hover:scale-110 hover:bg-blue-950 transition duration-300 ease-in-out text-3xl bg-azul rounded-full p-2 shadow-neutral-1 shadow"
+            divClass="flex items-center gap-12 mt-3"
+          />
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 "use client";
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import Details from "../ui/Details";
 import Button from "../ui/Button";
@@ -16,7 +17,37 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData); // Exibe os dados, incluindo o "subject" selecionado
+
+    emailjs
+      .send(
+        "service_0vbhlxs", // Coloque seu Service ID aqui
+        "template_cjq7r2l", // Coloque seu Template ID aqui
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "ndAE7DwHoIpCx4Ui9" // Substitua pela sua Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Mensagem enviada com sucesso:", result.text);
+          alert("Sua mensagem foi enviada com sucesso!");
+
+          // Limpa o formulário
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Erro ao enviar a mensagem:", error.text);
+          alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
+        }
+      );
   };
 
   const handleChange = (
@@ -31,7 +62,7 @@ const Contact = () => {
   const handleSelectChange = (value: string) => {
     setFormData({
       ...formData,
-      subject: value, // Atualiza o valor do subject selecionado
+      subject: value,
     });
   };
 
@@ -44,7 +75,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 relative">
+    <section id="contact" className="py-20 bg-white relative">
       <Details />
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">

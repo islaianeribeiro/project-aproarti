@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 
 const Hero = () => {
   return (
@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="absolute inset-0 z-3">
         <Image
           src="/images/hero2.jpg"
-          alt="Imagem de fundo"
-          layout="fill"
-          objectFit="cover"
+          alt="Hero"
+          fill
+          style={{ objectFit: "cover" }}
         />
-        <div className="absolute inset-0 bg-azul opacity-50" />
+        <div className="absolute inset-0 bg-azul opacity-50"></div>
       </div>
 
       <div className="container p-6 relative z-10 text-center md:mx-40 rounded-2xl">

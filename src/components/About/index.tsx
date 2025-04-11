@@ -50,7 +50,7 @@ const About = () => {
               muted
               preload="none"
             >
-              <source src="/loja.mp4" type="video/mp4" />
+              <source src="/videos/loja.mp4" type="video/mp4" />
               <track
                 src="/path/to/captions.vtt"
                 kind="subtitles"

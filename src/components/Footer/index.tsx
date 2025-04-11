@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import SocialMedia from "../ui/SocialMedia";
 
 const Footer = () => {
   return (
@@ -41,14 +42,11 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-terracota">
               Redes Sociais
             </h3>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="hover:text-pink-400 transition-colors">
-                <Instagram size={24} />
-              </a>
-            </div>
+
+            <SocialMedia
+              className="text-white text-sm hover:scale-110 hover:bg-blue-950 transition duration-300 ease-in-out w-8 h-8 bg-azul rounded-full p-2 shadow-neutral-1 shadow"
+              divClass="flex gap-5"
+            />
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">

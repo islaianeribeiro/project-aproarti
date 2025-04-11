@@ -45,7 +45,7 @@ const Product = () => {
     >
       {products.concat(products).map((product, index) => (
         <InfiniteScroll
-          key={`${product.title}-${index}`} // ✅ Melhorando a chave do map
+          key={`${product.title}-${index}`}
           {...product}
           setIsPaused={setIsPaused}
         />
