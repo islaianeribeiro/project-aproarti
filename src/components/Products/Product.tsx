@@ -11,14 +11,14 @@ const Product = () => {
 
   useEffect(() => {
     let animationFrame: number;
-    const speed = 2; // ✅ Velocidade ajustável para rolagem mais suave
+    const speed = 2;
 
     const animateScroll = () => {
       if (!isPaused && scrollRef.current) {
         setScrollPosition((prev) => {
           if (!scrollRef.current) return prev;
 
-          const newPosition = prev - speed; // ✅ Rolagem mais fluida e contínua
+          const newPosition = prev - speed;
           const maxScroll = scrollRef.current.scrollWidth / 2;
 
           return newPosition <= -maxScroll ? 0 : newPosition;

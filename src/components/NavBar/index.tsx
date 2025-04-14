@@ -38,8 +38,8 @@ const NavBar = () => {
             <Button
               icon={isOpen ? <X size={24} /> : <Menu size={24} />}
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-navy-900"
-              aria-label={isOpen ? "Fechar" : "Abrir"}
+              className="text-gray-700 hover:text-neutral-1"
+              aria-label={isOpen ? "Fechar Menu" : "Abrir Menu"}
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const NavBar = () => {
                   key={item.name}
                   name={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-navy-900 hover:bg-gray-50 rounded-md"
+                  className="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
                   onClick={() => setIsOpen(false)}
                 />
               ))}

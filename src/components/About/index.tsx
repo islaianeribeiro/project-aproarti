@@ -1,4 +1,3 @@
-import React from "react";
 import AboutItems from "./AboutItems";
 import Details from "../ui/Details";
 
