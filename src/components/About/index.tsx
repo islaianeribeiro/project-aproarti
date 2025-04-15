@@ -5,7 +5,7 @@ const sections = [
   {
     title: "Nossa História",
     content:
-      "A APROArTI nasceu do desejo de fortalecer e preservar o rico patrimônio artesanal de Icó. Ao longo dos anos, temos trabalhado incansavelmente para valorizar e estimular a produção artesanal local e oferecer maior estrutura aos artesãos, por meio de formações e difusão das manifestações culturais e artesanais da cidade. A organização estimula a capacidade produtiva de cerca de 60 bordadeiras e a venda dos produtos artesanais de alta qualidade nas regiões urbanas e rurais.",
+      "A APROARTI nasceu do desejo de fortalecer e preservar o rico patrimônio artesanal de Icó. Ao longo dos anos, temos trabalhado incansavelmente para valorizar e estimular a produção artesanal local e oferecer maior estrutura aos artesãos, por meio de formações e difusão das manifestações culturais e artesanais da cidade. A organização estimula a capacidade produtiva de cerca de 60 bordadeiras e a venda dos produtos artesanais de alta qualidade nas regiões urbanas e rurais.",
   },
   {
     title: "Comunidades Atendidas",
