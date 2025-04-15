@@ -5,7 +5,7 @@ const images = [
     id: 1,
     src: "/images/bordado.jpg",
     alt: "Imagem de bordado",
-    className: "absolute top-0 right-0 z-0 opacity-80 lg:w-70 w-40",
+    className: "absolute top-0 right-0 z-0 opacity-70 lg:w-70 w-40",
   },
   {
     id: 2,

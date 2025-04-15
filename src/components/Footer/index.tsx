@@ -69,6 +69,17 @@ const Footer = () => {
           <p className="text-azul">
             © {new Date().getFullYear()} APROATI. Todos os direitos reservados.
           </p>
+          <p className="text-azul">
+            Desenvolvido por{" "}
+            <a
+              className="underline hover:text-blue-950"
+              href="https://www.linkedin.com/in/islaianeribeiro"
+              target="_blank"
+            >
+              Islaiane Ribeiro
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>

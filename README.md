@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Site Institucional para Associação de Artesanato Local
 
-## Getting Started
+Este projeto foi desenvolvido como parte de um **projeto de extensão universitária**, com o objetivo de aplicar conhecimentos em tecnologia da informação para **apoiar atividades culturais**. A proposta é um site institucional que valoriza o trabalho de artesãos e artistas locais.
 
-First, run the development server:
+## 🎯 Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O site tem como propósito:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Divulgar a história, missão e atuação da associação.
+- Apresentar os produtos artesanais produzidos pelos membros da associação.
+- Facilitar a comunicação com possíveis **colaboradores, artesãos e patrocinadores**.
+- Valorizar a cultura e o artesanato regional por meio de uma presença digital acessível e moderna.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧱 Estrutura do Site
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto possui as seguintes seções:
 
-## Learn More
+- **Home:** Destaque da missão da associação e introdução visual.
+- **Sobre:** História da associação, comunidades onde atua e seus objetivos.
+- **Produtos:** Galeria de produtos artesanais (sem fins comerciais), com descrições.
+- **Contato:** Formulário para interessados em colaborar, participar ou apoiar a iniciativa.
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Motivação
 
-## Deploy on Vercel
+Este projeto nasceu da vontade de conectar **tecnologia e cultura**, utilizando o desenvolvimento web como ferramenta para **dar visibilidade ao artesanato local** e fomentar conexões com a comunidade.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- ## 📷 Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Adicione aqui imagens ou gifs do site em funcionamento.* -->
+
+## 📚 Projeto Acadêmico
+
+Este projeto foi desenvolvido para fins acadêmicos, mas está aberto para ser adaptado e utilizado oficialmente pela associação caso haja interesse.
+
+## 📩 Contato
+
+Desenvolvido por **Islaiane Ribeiro**  
+📧 islaiane.lribeiro@gmail.com
+📎 [LinkedIn](https://www.linkedin.com/in/islaianeribeiro)
