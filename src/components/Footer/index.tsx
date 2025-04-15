@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:flex md:justify-evenly gap-8">
           <InfoFooter
-            title="APROATI"
+            title="APROARTI"
             paragraphs={[
               {
                 text: "Associação de Artesãos, Gestores Culturais e Artistas de Icó - Ceará. Nosso objetivo é estimular a produção artesanal local e oferecer maior estrutura aos artesãos.",
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p className="text-azul">
-            © {new Date().getFullYear()} APROATI. Todos os direitos reservados.
+            © {new Date().getFullYear()} APROARTI. Todos os direitos reservados.
           </p>
           <p className="text-azul">
             Desenvolvido por{" "}
