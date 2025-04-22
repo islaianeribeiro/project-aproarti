@@ -3,6 +3,8 @@
 📌 Visão Geral  
 Este é um site institucional desenvolvido como parte de um projeto de extensão universitária. O objetivo é aplicar habilidades em desenvolvimento web para promover e valorizar o trabalho de artesãos e artistas locais por meio de uma presença digital moderna, acessível e informativa.
  
+🎥 **Assista ao vídeo demonstrativo:**
+
 [![Assista ao vídeo demonstrativo](https://img.youtube.com/vi/ECh1sFZf5Hg/hqdefault.jpg)](https://youtu.be/ECh1sFZf5Hg)
 
 🚀 Tecnologias Utilizadas  
