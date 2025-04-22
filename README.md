@@ -1,45 +1,63 @@
-# 🌿 Site Institucional para Associação de Artesanato Local
+🎨 Associação de Artesanato Local - Site Institucional
 
-Este projeto foi desenvolvido como parte de um **projeto de extensão universitária**, com o objetivo de aplicar conhecimentos em tecnologia da informação para **apoiar atividades culturais**. A proposta é um site institucional que valoriza o trabalho de artesãos e artistas locais.
+📌 Visão Geral  
+Este é um site institucional desenvolvido como parte de um projeto de extensão universitária. O objetivo é aplicar habilidades em desenvolvimento web para promover e valorizar o trabalho de artesãos e artistas locais por meio de uma presença digital moderna, acessível e informativa.
+ 
+🎥 Vídeo demonstrativo: [Assista no YouTube](https://youtu.be/ECh1sFZf5Hg)
 
-## 🎯 Objetivo
+🚀 Tecnologias Utilizadas  
 
-O site tem como propósito:
+**Frontend**
+- Next.js – Framework para React com foco em performance e SEO.
+- TypeScript – Superset do JavaScript que adiciona tipagem estática.
+- Tailwind CSS – Framework de estilização utilitário, responsivo e altamente customizável.
 
-- Divulgar a história, missão e atuação da associação.
-- Apresentar os produtos artesanais produzidos pelos membros da associação.
-- Facilitar a comunicação com possíveis **colaboradores, artesãos e patrocinadores**.
-- Valorizar a cultura e o artesanato regional por meio de uma presença digital acessível e moderna.
+📌 Funcionalidades Principais
 
-## 🧱 Estrutura do Site
+**Home:**  
+- Apresenta a missão e uma imagem de destaque da associação.
 
-O projeto possui as seguintes seções:
+**Sobre:**  
+- Mostra a história, comunidades atendidas e objetivos da associação.
 
-- **Home:** Destaque da missão da associação e introdução visual.
-- **Sobre:** História da associação, comunidades onde atua e seus objetivos.
-- **Produtos:** Galeria de produtos artesanais (sem fins comerciais), com descrições.
-- **Contato:** Formulário para interessados em colaborar, participar ou apoiar a iniciativa.
+**Produtos:**  
+- Galeria com produtos artesanais e descrições (sem fins comerciais).
 
-## ⚙️ Tecnologias Utilizadas
+**Contato:**  
+- Formulário para envio de mensagens, voltado para colaboradores, artesãos e patrocinadores.
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+**Navegação e Interface:**  
+- Navegação simples entre seções.  
+- Design responsivo para todos os dispositivos.  
+- Footer com informações de contato e redes sociais.
 
-## 💡 Motivação
+🛠️ Como Rodar o Projeto
 
-Este projeto nasceu da vontade de conectar **tecnologia e cultura**, utilizando o desenvolvimento web como ferramenta para **dar visibilidade ao artesanato local** e fomentar conexões com a comunidade.
+Clone este repositório:
 
-<!-- ## 📷 Preview
+```bash
+git clone https://github.com/islaianeribeiro/project-aproarti.git
+```
 
-*Adicione aqui imagens ou gifs do site em funcionamento.* -->
+Acesse a pasta do projeto:
 
-## 📚 Projeto Acadêmico
+```bash
+cd project-aproarti
+```
 
-Este projeto foi desenvolvido para fins acadêmicos, mas está aberto para ser adaptado e utilizado oficialmente pela associação caso haja interesse.
+Instale as dependências:
 
-## 📩 Contato
+```bash
+npm install
+```
 
-Desenvolvido por **Islaiane Ribeiro**  
-📧 islaiane.lribeiro@gmail.com
-📎 [LinkedIn](https://www.linkedin.com/in/islaianeribeiro)
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Acesse o projeto em `http://localhost:3000` 
+
+📚 Conclusão  
+Este projeto foi desenvolvido com o propósito de conectar tecnologia e cultura, oferecendo uma ferramenta digital para divulgar o artesanato local. A iniciativa busca apoiar a associação e proporcionar mais visibilidade ao seu trabalho.
