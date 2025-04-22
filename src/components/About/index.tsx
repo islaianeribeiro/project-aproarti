@@ -31,7 +31,7 @@ const About = () => {
         <Details />
 
         <div className="max-w-3xl mx-auto text-center mb-10 z-10 relative">
-          <h2 className="text-teste text-3xl md:text-4xl font-bold mb-4 uppercase">
+          <h2 className="text-verde text-3xl md:text-4xl font-bold mb-4 uppercase">
             Sobre a APROARTI
           </h2>
           <p className="text-azul text-lg">

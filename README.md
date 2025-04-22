@@ -1,39 +1,45 @@
-🎨 Associação de Artesanato Local - Site Institucional
+# 🎨 Associação de Artesanato Local - Site Institucional
 
 📌 Visão Geral  
 Este é um site institucional desenvolvido como parte de um projeto de extensão universitária. O objetivo é aplicar habilidades em desenvolvimento web para promover e valorizar o trabalho de artesãos e artistas locais por meio de uma presença digital moderna, acessível e informativa.
- 
+
 🎥 **Assista ao vídeo demonstrativo:**
 
 [![Assista ao vídeo demonstrativo](https://img.youtube.com/vi/ECh1sFZf5Hg/hqdefault.jpg)](https://youtu.be/ECh1sFZf5Hg)
 
-🚀 Tecnologias Utilizadas  
+## 🚀 Tecnologias Utilizadas
 
 **Frontend**
+
 - Next.js – Framework para React com foco em performance e SEO.
 - TypeScript – Superset do JavaScript que adiciona tipagem estática.
 - Tailwind CSS – Framework de estilização utilitário, responsivo e altamente customizável.
 
-📌 Funcionalidades Principais
+## 📌 Funcionalidades Principais
 
-**Home:**  
+**Home:**
+
 - Apresenta a missão e uma imagem de destaque da associação.
 
-**Sobre:**  
+**Sobre:**
+
 - Mostra a história, comunidades atendidas e objetivos da associação.
 
-**Produtos:**  
+**Produtos:**
+
 - Galeria com produtos artesanais e descrições (sem fins comerciais).
 
-**Contato:**  
+**Contato:**
+
 - Formulário para envio de mensagens, voltado para colaboradores, artesãos e patrocinadores.
 
-**Navegação e Interface:**  
-- Navegação simples entre seções.  
-- Design responsivo para todos os dispositivos.  
+**Navegação e Interface:**
+
+- Navegação simples entre seções.
+- Design responsivo para todos os dispositivos.
 - Footer com informações de contato e redes sociais.
 
-🛠️ Como Rodar o Projeto
+## 🛠️ Como Rodar o Projeto
 
 Clone este repositório:
 
@@ -59,7 +65,8 @@ Inicie o servidor de desenvolvimento:
 npm run dev
 ```
 
-Acesse o projeto em `http://localhost:3000` 
+Acesse o projeto em `http://localhost:3000`
 
-📚 Conclusão  
+## 📚 Conclusão
+
 Este projeto foi desenvolvido com o propósito de conectar tecnologia e cultura, oferecendo uma ferramenta digital para divulgar o artesanato local. A iniciativa busca apoiar a associação e proporcionar mais visibilidade ao seu trabalho.

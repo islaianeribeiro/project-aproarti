@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       <div className="container p-6 relative z-10 text-center md:mx-40 rounded-2xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-teste mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-verde mb-6">
           Valorizando o Artesanato Local
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">

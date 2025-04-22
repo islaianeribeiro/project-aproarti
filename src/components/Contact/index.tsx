@@ -99,7 +99,7 @@ const Contact = () => {
       <Details />
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-teste mb-4 z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-verde mb-4 z-10">
             Entre em Contato
           </h2>
           <p className="text-gray-600 text-lg">
@@ -113,7 +113,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="bg-gradient-to-b from-marfim to-white rounded-lg shadow-lg p-8 mx-0 md:mx-20 lg:mx-28 xl:mx-65"
+          className="bg-gradient-to-b from-marfim to-neutral-0 rounded-lg shadow-lg p-8 mx-0 md:mx-20 lg:mx-28 xl:mx-65"
         >
           <CustomInput
             id="name"
