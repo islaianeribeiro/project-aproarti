@@ -39,7 +39,7 @@ const Footer = () => {
             paragraphs={[
               {
                 icon: <MapPin size={25} />,
-                text: "Rua Dr. Inácio Dias, Sobrado Canela Preta 2083, Icó - CEP 63430000",
+                text: "Rua José Paraibano 982, Centro, Icó - Ceará / CEP 63430000",
               },
               {
                 icon: <Mail size={18} />,
