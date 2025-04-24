@@ -41,31 +41,58 @@ Este é um site institucional desenvolvido como parte de um projeto de extensão
 
 ## 🛠️ Como Rodar o Projeto
 
-Clone este repositório:
+Para rodar o projeto localmente, siga os passos abaixo:
 
-```bash
-git clone https://github.com/islaianeribeiro/project-aproarti.git
-```
+### Pré-requisitos
 
-Acesse a pasta do projeto:
+1. Clone este repositório:
 
-```bash
-cd project-aproarti
-```
+   ```bash
+   git clone https://github.com/islaianeribeiro/project-aproarti.git
+   ```
 
-Instale as dependências:
+2. Acesse a pasta do projeto:
 
-```bash
-npm install
-```
+   ```bash
+   cd project-aproarti
+   ```
 
-Inicie o servidor de desenvolvimento:
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+### Configuração do Ambiente
+
+Este projeto utiliza o **EmailJS** para envio de emails. Para configurá-lo, você precisará de algumas variáveis de ambiente, que devem ser configuradas no arquivo `.env.local` na raiz do projeto.
+
+1. **Crie o arquivo `.env.local`** na raiz do seu projeto (se ainda não existir).
+2. **Adicione as seguintes variáveis de ambiente** ao arquivo `.env.local`, substituindo pelos seus valores reais de **service ID** e **template ID** do EmailJS:
+
+   ```env
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id_aqui
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=seu_template_id_aqui
+   ```
+
+   ⚠️ **A public key não é mais necessária** para esse projeto, então **não adicione** a chave pública às variáveis de ambiente.
+
+### Rodando o servidor de desenvolvimento
+
+Após configurar as variáveis de ambiente, inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-Acesse o projeto em `http://localhost:3000`
+Acesse o projeto em [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Contribuições
+
+Se quiser contribuir, basta fazer um fork deste repositório, fazer suas alterações e abrir um pull request.
+
+---
 
 ## 📚 Conclusão
 
