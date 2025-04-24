@@ -25,15 +25,14 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_0vbhlxs",
-        "template_cjq7r2l",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Template ID
         {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
-        },
-        "ndAE7DwHoIpCx4Ui9"
+        }
       )
       .then(
         (result) => {
