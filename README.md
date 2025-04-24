@@ -72,9 +72,8 @@ Este projeto utiliza o **EmailJS** para envio de emails. Para configurá-lo, voc
    ```env
    NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id_aqui
    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=seu_template_id_aqui
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=sua_public_key_aqui
    ```
-
-   ⚠️ **A public key não é mais necessária** para esse projeto, então **não adicione** a chave pública às variáveis de ambiente.
 
 ### Rodando o servidor de desenvolvimento
 

@@ -1,5 +1,5 @@
 "use client";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import Details from "../ui/Details";
 import Button from "../ui/Button";
@@ -25,15 +25,17 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Service ID
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
-        }
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
+
       .then(
         (result) => {
           console.log("Mensagem enviada com sucesso:", result.text);
