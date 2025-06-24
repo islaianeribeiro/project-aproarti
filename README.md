@@ -1,19 +1,29 @@
 # 🎨 Associação de Artesanato Local - Site Institucional
 
-📌 Visão Geral  
 Este é um site institucional desenvolvido como parte de um projeto de extensão universitária. O objetivo é aplicar habilidades em desenvolvimento web para promover e valorizar o trabalho de artesãos e artistas locais por meio de uma presença digital moderna, acessível e informativa.
 
-🎥 **Assista ao vídeo demonstrativo:**
-
-[![Assista ao vídeo demonstrativo](https://img.youtube.com/vi/ECh1sFZf5Hg/hqdefault.jpg)](https://youtu.be/ECh1sFZf5Hg)
+<div align="center">
+  <img src="./public/screenshot-home.png" alt="Tela inicial." width="100%"/>
+  <img src="./public/screenshot-about.png" alt="Sobre da associação." width="100%"/>
+  <img src="./public/screenshot-products.png" alt="Produtos artesanais da associação." width="100%"/>
+  <img src="./public/screenshot-contact.png" alt="Tela de contato com formulário." width="100%"/>
+</div>
 
 ## 🚀 Tecnologias Utilizadas
 
 **Frontend**
 
-- Next.js – Framework para React com foco em performance e SEO.
-- TypeScript – Superset do JavaScript que adiciona tipagem estática.
-- Tailwind CSS – Framework de estilização utilitário, responsivo e altamente customizável.
+- **Next.js** – Framework para React com foco em performance e SEO.
+- **React.js** – Biblioteca JavaScript para construção de interfaces modernas e reativas.
+- **TypeScript** – Superset do JavaScript que adiciona tipagem estática e melhora a produtividade e manutenção do código.
+- **Tailwind CSS** – Framework de utilitários CSS para estilização rápida e responsiva.
+- **PostCSS** – Ferramenta de processamento de CSS usada com Tailwind para transformar estilos com plugins.
+- **Lucide React** – Conjunto de ícones open-source para React, leve e personalizável.
+- **@headlessui/react** – Componentes acessíveis e sem estilo pré-definido, ideais para usar com Tailwind CSS.
+
+**Integrações**
+
+- **EmailJS** – Biblioteca para envio de e-mails diretamente do front-end, sem necessidade de um servidor backend.
 
 ## 📌 Funcionalidades Principais
 
@@ -38,6 +48,26 @@ Este é um site institucional desenvolvido como parte de um projeto de extensão
 - Navegação simples entre seções.
 - Design responsivo para todos os dispositivos.
 - Footer com informações de contato e redes sociais.
+
+## 🧠 Organização do Código
+
+Estrutura das pastas e arquivos do projeto:
+
+```
+📁 public                        # Arquivos públicos como imagens e ícones acessíveis diretamente
+📁 src
+├─ 📁 app                        # Estrutura de rotas e páginas do Next.js
+├─ 📁 components                 # Componentes reutilizáveis da interface
+│  ├─ 📁 About                   # Seção "Sobre"
+│  ├─ 📁 Contact                 # Seção de contato com formulário
+│  ├─ 📁 Footer                  # Rodapé do site
+│  ├─ 📁 Hero                    # Seção principal de destaque do site
+│  ├─ 📁 NavBar                  # Componente da barra de navegação
+│  ├─ 📁 Products                # Componente de exibição dos produtos
+│  └─ 📁 ui                      # Componentes visuais reutilizáveis (UI)
+├─ 📁 data
+│  └─ 📄 products.json           # Arquivo com os dados dos produtos artesanais
+```
 
 ## 🛠️ Como Rodar o Projeto
 
@@ -67,7 +97,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 Este projeto utiliza o **EmailJS** para envio de emails. Para configurá-lo, você precisará de algumas variáveis de ambiente, que devem ser configuradas no arquivo `.env.local` na raiz do projeto.
 
 1. **Crie o arquivo `.env.local`** na raiz do seu projeto (se ainda não existir).
-2. **Adicione as seguintes variáveis de ambiente** ao arquivo `.env.local`, substituindo pelos seus valores reais de **service ID** e **template ID** do EmailJS:
+2. **Adicione as seguintes variáveis de ambiente** ao arquivo `.env.local`, substituindo pelos seus valores reais de **service ID**, **template ID** e **public Key** do EmailJS:
 
    ```env
    NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id_aqui
@@ -87,12 +117,21 @@ Acesse o projeto em [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## Contribuições
-
-Se quiser contribuir, basta fazer um fork deste repositório, fazer suas alterações e abrir um pull request.
-
----
-
 ## 📚 Conclusão
 
 Este projeto foi desenvolvido com o propósito de conectar tecnologia e cultura, oferecendo uma ferramenta digital para divulgar o artesanato local. A iniciativa busca apoiar a associação e proporcionar mais visibilidade ao seu trabalho.
+
+---
+
+## 👩‍💻 Desenvolvido por
+
+**Islaiane Ribeiro**
+Front-End Developer
+
+🔗 [https://www.linkedin.com/in/islaianeribeiro](https://www.linkedin.com/in/islaianeribeiro)
+
+---
+
+## 📝 Licença
+
+MIT © 2025 — Sinta-se à vontade para usar como base para seus próprios projetos!
