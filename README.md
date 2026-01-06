@@ -1,125 +1,150 @@
-# 🎨 Associação de Artesanato Local - Site Institucional
+# 🎨 Associação de Artesanato Local — Site Institucional
 
-Este é um site institucional desenvolvido como parte de um projeto de extensão universitária. O objetivo é aplicar habilidades em desenvolvimento web para promover e valorizar o trabalho de artesãos e artistas locais por meio de uma presença digital moderna, acessível e informativa.
+Site institucional desenvolvido para **fortalecer a presença digital de uma associação de artesanato local**, com foco em **acessibilidade, identidade cultural e organização de conteúdo**.
+O projeto aplica boas práticas de desenvolvimento front-end em um contexto real, conectando tecnologia e valorização do trabalho artesanal.
 
 <div align="center">
-  <img src="./public/screenshot-home.png" alt="Tela inicial." width="100%"/>
-  <img src="./public/screenshot-about.png" alt="Sobre da associação." width="100%"/>
-  <img src="./public/screenshot-products.png" alt="Produtos artesanais da associação." width="100%"/>
-  <img src="./public/screenshot-contact.png" alt="Tela de contato com formulário." width="100%"/>
+  <img src="./public/screenshot-home.png" alt="Tela inicial do site." width="100%"/>
+  <img src="./public/screenshot-about.png" alt="Seção sobre a associação." width="100%"/>
+  <img src="./public/screenshot-products.png" alt="Galeria de produtos artesanais." width="100%"/>
+  <img src="./public/screenshot-contact.png" alt="Tela de contato com formulário funcional." width="100%"/>
 </div>
+
+---
 
 ## 🚀 Tecnologias Utilizadas
 
-**Frontend**
+### Front-end
 
-- **Next.js** – Framework para React com foco em performance e SEO.
-- **React.js** – Biblioteca JavaScript para construção de interfaces modernas e reativas.
-- **TypeScript** – Superset do JavaScript que adiciona tipagem estática e melhora a produtividade e manutenção do código.
-- **Tailwind CSS** – Framework de utilitários CSS para estilização rápida e responsiva.
-- **PostCSS** – Ferramenta de processamento de CSS usada com Tailwind para transformar estilos com plugins.
-- **Lucide React** – Conjunto de ícones open-source para React, leve e personalizável.
-- **@headlessui/react** – Componentes acessíveis e sem estilo pré-definido, ideais para usar com Tailwind CSS.
+* **Next.js** — Framework React com foco em performance, SEO e organização de rotas.
+* **React.js** — Construção de interfaces componentizadas e reutilizáveis.
+* **TypeScript** — Tipagem estática para maior segurança e manutenção do código.
+* **Tailwind CSS** — Estilização utilitária com foco em responsividade.
+* **PostCSS** — Processamento de estilos integrado ao Tailwind CSS.
+* **Lucide React** — Biblioteca de ícones leve e personalizável.
+* **@headlessui/react** — Componentes acessíveis e sem estilo, integrados ao Tailwind.
 
-**Integrações**
+### Integrações
 
-- **EmailJS** – Biblioteca para envio de e-mails diretamente do front-end, sem necessidade de um servidor backend.
+* **EmailJS** — Envio de mensagens diretamente pelo front-end, sem necessidade de backend.
+
+---
 
 ## 📌 Funcionalidades Principais
 
-**Home:**
+### Home
 
-- Apresenta a missão e uma imagem de destaque da associação.
+* Apresentação da associação e sua missão cultural.
 
-**Sobre:**
+### Sobre
 
-- Mostra a história, comunidades atendidas e objetivos da associação.
+* História, comunidades atendidas e objetivos da associação.
 
-**Produtos:**
+### Produtos
 
-- Galeria com produtos artesanais e descrições (sem fins comerciais).
+* Galeria de produtos artesanais com descrições informativas (sem fins comerciais).
 
-**Contato:**
+### Contato
 
-- Formulário para envio de mensagens, voltado para colaboradores, artesãos e patrocinadores.
+* Formulário funcional para comunicação com colaboradores, artesãos e apoiadores.
 
-**Navegação e Interface:**
+### Interface e Navegação
 
-- Navegação simples entre seções.
-- Design responsivo para todos os dispositivos.
-- Footer com informações de contato e redes sociais.
+* Navegação clara entre seções.
+* Layout totalmente responsivo.
+* Footer com informações de contato e redes sociais.
 
-## 🧠 Organização do Código
+---
 
-Estrutura das pastas e arquivos do projeto:
+## 🧠 Destaques Técnicos
+
+* Estruturação do projeto utilizando o **App Router do Next.js**.
+* Componentização por domínio (`About`, `Products`, `Contact`, etc.), facilitando manutenção e escalabilidade.
+* Uso de **dados via JSON** para exibição dos produtos.
+* Integração com **EmailJS** para envio de mensagens sem dependência de backend.
+* Organização de código seguindo boas práticas de front-end.
+
+---
+
+## ♿ Acessibilidade
+
+O projeto foi desenvolvido considerando boas práticas de acessibilidade, incluindo:
+
+* Uso de componentes acessíveis com **Headless UI**.
+* Estrutura semântica adequada.
+* Layout responsivo e legível em diferentes dispositivos.
+* Navegação simples e intuitiva.
+
+---
+
+## 🗂️ Organização do Código
 
 ```
-📁 public                        # Arquivos públicos como imagens e ícones acessíveis diretamente
+📁 public                        # Imagens e arquivos públicos
 📁 src
-├─ 📁 app                        # Estrutura de rotas e páginas do Next.js
-├─ 📁 components                 # Componentes reutilizáveis da interface
+├─ 📁 app                        # Rotas e páginas (Next.js App Router)
+├─ 📁 components                 # Componentes reutilizáveis
 │  ├─ 📁 About                   # Seção "Sobre"
-│  ├─ 📁 Contact                 # Seção de contato com formulário
-│  ├─ 📁 Footer                  # Rodapé do site
-│  ├─ 📁 Hero                    # Seção principal de destaque do site
-│  ├─ 📁 NavBar                  # Componente da barra de navegação
-│  ├─ 📁 Products                # Componente de exibição dos produtos
-│  └─ 📁 ui                      # Componentes visuais reutilizáveis (UI)
+│  ├─ 📁 Contact                 # Formulário de contato
+│  ├─ 📁 Footer                  # Rodapé
+│  ├─ 📁 Hero                    # Seção principal
+│  ├─ 📁 NavBar                  # Navegação
+│  ├─ 📁 Products                # Exibição dos produtos
+│  └─ 📁 ui                      # Componentes visuais reutilizáveis
 ├─ 📁 data
-│  └─ 📄 products.json           # Arquivo com os dados dos produtos artesanais
+│  └─ 📄 products.json           # Dados dos produtos artesanais
 ```
+
+---
 
 ## 🛠️ Como Rodar o Projeto
 
-Para rodar o projeto localmente, siga os passos abaixo:
-
 ### Pré-requisitos
 
-1. Clone este repositório:
+* Node.js instalado
 
-   ```bash
-   git clone https://github.com/islaianeribeiro/project-aproarti.git
-   ```
+### Passo a passo
 
-2. Acesse a pasta do projeto:
+```bash
+# Clone o repositório
+git clone https://github.com/islaianeribeiro/project-aproarti.git
 
-   ```bash
-   cd project-aproarti
-   ```
+# Acesse a pasta
+cd project-aproarti
 
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
+# Instale as dependências
+npm install
+```
 
-### Configuração do Ambiente
+### Configuração do EmailJS
 
-Este projeto utiliza o **EmailJS** para envio de emails. Para configurá-lo, você precisará de algumas variáveis de ambiente, que devem ser configuradas no arquivo `.env.local` na raiz do projeto.
+Crie um arquivo `.env.local` na raiz do projeto e adicione:
 
-1. **Crie o arquivo `.env.local`** na raiz do seu projeto (se ainda não existir).
-2. **Adicione as seguintes variáveis de ambiente** ao arquivo `.env.local`, substituindo pelos seus valores reais de **service ID**, **template ID** e **public Key** do EmailJS:
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=seu_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=sua_public_key
+```
 
-   ```env
-   NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id_aqui
-   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=seu_template_id_aqui
-   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=sua_public_key_aqui
-   ```
-
-### Rodando o servidor de desenvolvimento
-
-Após configurar as variáveis de ambiente, inicie o servidor de desenvolvimento:
+### Rodando o projeto
 
 ```bash
 npm run dev
 ```
 
-Acesse o projeto em [http://localhost:3000](http://localhost:3000).
+Acesse em:
+👉 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📚 Conclusão
+## 📌 Status do Projeto
 
-Este projeto foi desenvolvido com o propósito de conectar tecnologia e cultura, oferecendo uma ferramenta digital para divulgar o artesanato local. A iniciativa busca apoiar a associação e proporcionar mais visibilidade ao seu trabalho.
+* ✔️ Versão funcional concluída
+* 🔧 Possíveis evoluções futuras:
+
+  * Integração com API real
+  * Área administrativa
+  * Sistema de agendamento ou contato avançado
 
 ---
 
@@ -134,4 +159,4 @@ Front-End Developer
 
 ## 📝 Licença
 
-MIT © 2025 — Sinta-se à vontade para usar como base para seus próprios projetos!
+MIT © 2025 — Sinta-se à vontade para usar como base para seus próprios projetos.
